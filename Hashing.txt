@@ -1,0 +1,24 @@
+#include<bits/stdc++.h>
+using namespace std;
+const int N = 1e7+10;
+int hash[N];
+
+// this is a program for counting repeated element using hashing in an optimal way
+
+int main(){
+	int n;
+	cin >> n;
+	int a[n];
+	for(int i=0;i<n;i++){
+		cin >> a[i];
+		hash[a[i]]++;
+	}
+	int t;
+	cin >> t;
+	while(t--){
+		int x;
+		cin >> x;
+		cout << hash[x] << endl;
+	}
+	
+	
