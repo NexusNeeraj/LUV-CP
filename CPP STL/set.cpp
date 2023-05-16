@@ -23,3 +23,6 @@ int main(){
       s.erase("bcd");
       print(s);
 }
+
+
+//here is a simple formula for the sum of all subsets. Consider a set {a1, a2, ..., an}. There are 2^n subsets, and each ai exists in exactly 2^(n - 1) of them. Therefore, the sum of all subsets is equal to 2^(n - 1)(a1 + a2 + ... + an).
