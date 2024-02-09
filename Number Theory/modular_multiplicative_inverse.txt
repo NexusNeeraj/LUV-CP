@@ -1,0 +1,31 @@
+(A/B)%M != ((A%M)/(B%M))%M
+
+(A/B)%M = (A * (B)^(-1))%M
+        = ((A%M) * ((B)^(-1))%M)%M
+
+        (B)^(-1)%M = MODULAR MULTIPLICATIVE INVERSE OF B(MMI)
+
+        // whole explanation see luv cp ep 61 video
+        AS WE KNOW 
+        A * B = 1
+        B IS MODULAR INVERSE(MI) OF A
+        (A * B)%M = 1
+        B IS MMI OF A
+        1 <= |B| < M-1 
+
+ METHOD -> 1    LOOP B = 1 -> M-1
+                (A*B)%M = 1
+                O(M)
+                MMI OF A WITH M
+                O(M)
+                MMI DEFINED IF A AND M ARE COPRIME(MEANS GCD(A,M) == 1)
+
+METHOD -> 2     FERMAT THEOREM
+                
+                (A)^(M-1) = 1 MOD(M)
+                above expression means agar hum A to the power (M-1) ko M se divide karenge to remainder humesa 1 hoga
+                M IS PRIME 
+                A IS NOT MULTIPLE OF M
+
+                ((A)^(M-2)%M) = (A)^(-1)
+                
